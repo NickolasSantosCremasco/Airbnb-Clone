@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactButton from "@/app/components/contactButton";
+import PropertyList from "@/app/components/properties/PropertyList";
 
 const LandlordDetailPage = () => {
     return (
@@ -21,8 +22,13 @@ const LandlordDetailPage = () => {
                     </div>
                     
                 </aside>
-                <div className="col-span-3 pl-0 md:pl-6">
-
+                <div className="col-span-1 md:col-span-3 pl-0 md:pl-6">
+                    <div className=" grid grid-cols-1 md:grid-cols-3  gap-6">
+                        <PropertyList 
+                            
+                        />
+                    </div>
+        
                 </div>
             </div>
         </main>
